@@ -1,8 +1,9 @@
 #include <iostream>
 using namespace std;
-int main() { 
-    int nbrePlaces = 10;
-    
+int main() {
+  char choix;
+  int nbrePlaces = 10;
+  do {
     cout << "********* Evaluation *********** \n";
     cout << "1- Entree dans le parking \n";
     cout << "2 - Nombre de places disponibles \n";
@@ -10,13 +11,11 @@ int main() {
     cout << "4 - Quitter \n";
     cout << "********************************* \n";
 
-    int choix;
-        cout << "choisir une des options\n";
-        cin >> choix;
-        cout << "vous avez choisi: " << choix << endl; 
-    
-    
+    cout << "choisir une des options\n";
+    cin >> choix;
+    cout << "vous avez choisi: " << choix << endl;
 
+  } while (choix != '4');
 
-return 0;
+  return 0;
 }
