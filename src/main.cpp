@@ -13,7 +13,22 @@ int main() {
 
     cout << "choisir une des options\n";
     cin >> choix;
-    cout << "vous avez choisi: " << choix << endl;
+    cout << "vous avez choisi l'option " << choix << endl;
+    switch(choix){
+        case('1'):
+        cout << "on decremente le nombre de places de parking restantes (nbrePlaces--) \n";
+        break;
+        case('2'):
+        cout << "on affiche le nombre de places restantes\n";
+        break;
+        case('3'):
+        cout << "on incremente le nombre de places de parking restantes\n";
+        break;
+        case('4'):
+        cout << "Au revoir\n";
+        break;
+        
+    }
 
   } while (choix != '4');
 
